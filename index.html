@@ -1,61 +1,11 @@
 ---
 layout: default
-title: Home
+title: Ana Sayfa
 ---
-
-{% if page.url == "/" %}
-
-<!-- Featured
-================================================== -->
-<section class="featured-posts">
-    <div class="section-title">
-        <h2><span>Featured</span></h2>
-    </div>
-    <div class="row">
-
-    {% for post in site.posts %}
-
-        {% if post.featured == true %}
-
-            {% include featuredbox.html %}
-
-        {% endif %}
-
-    {% endfor %}
-
-    </div>
-</section>
-
-{% endif %}
-
-<!-- Posts Index
-================================================== -->
-<section class="recent-posts">
-
-    <div class="section-title">
-
-        <h2><span>All Stories</span></h2>
-
-    </div>
-
-    <div class="row listrecent">
-
-        {% for post in paginator.posts %}
-
-        {% include postbox.html %}
-
-        {% endfor %}
-
-    </div>
-
-</section>
-
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<div class="pointerup"><i class="fa fa-caret-up"></i></div>
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
+<p class="eyebrow">MertApp</p>
+<h1>Uygulamalar. Oyunlar.<br>Yeni fikirler.</h1>
+<p class="intro">MertApp uygulamalarına ait resmi bilgilere ve politika sayfalarına buradan ulaşabilirsiniz.</p>
+<div class="cards">
+<a class="card" href="{{ '/privacy-policy/' | relative_url }}"><h2>Gizlilik Politikası</h2><p>Uygulamalara ait gizlilik ve veri işleme bilgileri.</p><span>Sayfayı görüntüle →</span></a>
+<a class="card" href="{{ '/terms-of-use/' | relative_url }}"><h2>Kullanım Koşulları</h2><p>MertApp uygulamalarının kullanımına ilişkin koşullar.</p><span>Sayfayı görüntüle →</span></a>
 </div>
-
