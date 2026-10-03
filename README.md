@@ -4,4 +4,4 @@ Official website: https://mertapp.github.io/
 
 Static Jekyll site published by GitHub Pages from the master branch.
 
-Policy pages are placeholders until application-specific documents are supplied. Edit `_pages/privacy-policy.html` and `_pages/terms-of-use.html` to publish those documents.
+Each app has its own folder under `_pages/<app>/` (index = support page, privacy-policy, terms-of-use). The top-level privacy-policy and terms-of-use pages list them.
