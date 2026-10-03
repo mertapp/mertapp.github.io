@@ -1,9 +1,9 @@
 name: MertApp
 title: MertApp
-description: "MertApp uygulamaları için resmi bilgi ve politika sayfaları."
+description: "Official information and policy pages for MertApp apps and games."
 url: "https://mertapp.github.io"
 baseurl: ""
-lang: tr
+lang: en
 include: ["_pages"]
 plugins:
   - jekyll-sitemap
